@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 70%;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+.clickHere {
+    color: red;
+}
+.well {
+    text-align: center;
+    font-family: CorelDraw;
+    font-size: larger;
+    position: relative;
+    bottom: 0;
+}
+.clickHere:hover {
+    color: orange;
+    text-underline: none;
+    text-decoration: none;
+}
+.mainFooter {
+    position: absolute;
+    color: gray;
+    text-align: center;
+    font-size: 11px;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    font-family: "Times New Roman";
+}
+#headerImage {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.searchArea {
+    margin-left: 250px;
+}
+footer{
+    font-size: 16px;
+    color: #0e0e0e;
+    position: relative;
+    bottom: 0;
+}
+table {
+    overflow-y: hidden;
+}
+.welcomeImage {
+    position: absolute;
+    width:100%;
+    left:0;
+}
+td {
+    padding-left: 500px;
+}

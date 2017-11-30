@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/images/base/favicon.ico" />
+    <title>IT Consultant | Just another WordPress site</title>
+
+    <style>
+        body {
+            font-family: PT Sans;
+            font-size: 13px;
+            color: #2e2e2e;
+        }
+        
+        body {
+            background-color: #fcfcfc
+        }
+        
+        .slide_more a,
+        .mobile_nav a {
+            background-color: 1;
+        }
+        
+        nav ul li a:hover,
+        nav ul li.current_page_item a,
+        nav ul li.current_page_parent a.parent,
+        nav ul li:hover ul li:hover,
+        nav ul li:hover ul {
+            background-color: #b40000;
+        }
+        
+        nav ul li:hover ul li:hover {
+            background-color: #c90202;
+        }
+        
+        nav ul li:hover ul li {
+            border-bottom: 1px solid#d76969;
+        }
+        
+        nav ul li a {
+            border-right: 1px solid 1;
+        }
+        
+        nav {
+            font-family: PT Sans;
+        }
+        
+        .header #logo img {
+            height: 62px;
+        }
+        
+        nav ul li a {
+            font-size: 16px;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: PT Sans;
+        }
+        
+        @media screen and (min-width:1000px) {
+            nav ul li a {
+                color: #2e2e2e;
+            }
+        }
+        
+        @media screen and (max-width:999px) {
+            nav ul li a {
+                color: #2e2e2e;
+            }
+        }
+        
+        @media screen and (min-width:1000px) {
+            nav ul li a:hover,
+            nav ul li ul li a:hover,
+            nav ul li.current_page_item a:hover,
+            nav ul li.current_page_item ul li a:hover {
+                color: #ffffff;
+            }
+        }
+        
+        @media screen and (max-width:999px) {
+            nav ul li a:hover,
+            nav ul li ul li a:hover,
+            nav ul li.current_page_item a:hover,
+            nav ul li.current_page_item ul li a:hover {
+                color: #ffffff;
+            }
+        }
+        
+        @media screen and (min-width:1000px) {
+            nav ul li ul li:hover,
+            nav ul li ul li.current-menu-item,
+            nav ul li ul li.current_page_parent {
+                background-color: 1;
+            }
+        }
+        
+        @media screen and (max-width:999px) {
+            nav ul li ul li:hover,
+            nav ul li ul li.current-menu-item,
+            nav ul li ul li:hover,
+            nav ul li ul li.current_page_parent {
+                background-color: 1;
+            }
+        }
+        
+        h1 {
+            font-family: PT Sans;
+        }
+        
+        h1 {
+            font-size: 38px;
+        }
+        
+        h1 {
+            color: #2e2e2e;
+        }
+        
+        h2 {
+            font-family: PT Sans;
+        }
+        
+        h2 {
+            font-size: 37px;
+        }
+        
+        h2,
+        .title-404,
+        .text-404 {
+            color: #2e2e2e;
+        }
+        
+        h3 {
+            font-family: PT Sans;
+        }
+        
+        h3 {
+            font-size: 22px;
+        }
+        
+        h3 {
+            color: #2e2e2e;
+        }
+        
+        h4 {
+            font-family: PT Sans;
+        }
+        
+        h4 {
+            font-size: 18px;
+        }
+        
+        h4 {
+            color: #28282a;
+        }
+        
+        h5 {
+            font-family: PT Sans;
+        }
+        
+        h5 {
+            font-size: 16px;
+        }
+        
+        h5 {
+            color: #b40000;
+        }
+        
+        h6 {
+            font-family: PT Sans;
+        }
+        
+        h6 {
+            font-size: 13px;
+        }
+        
+        h6 {
+            color: #868686;
+        }
+        
+        #logo h1 {
+            font-family: PT Sans;
+        }
+        
+        #logo h1 {
+            font-size: 36px;
+        }
+        
+        #logo h1 {
+            color: #b40000;
+        }
+        
+        h4.phone span {
+            color: #b40000;
+        }
+        
+        h4.phone {
+            color: #28282a;
+        }
+        
+        .mobile_nav a {
+            border: 1px solid #cccccc;
+        }
+        
+        #footer h3 {
+            font-size: 18px;
+        }
+        
+        #footer h1,
+        #footer h2,
+        #footer h3,
+        #footer h4,
+        #footer h5,
+        #footer h6,
+        #footer h1 span,
+        #footer h2 span,
+        #footer h3 span,
+        #footer h4 span,
+        #footer h5 span,
+        #footer h6 span {
+            color: #ffffff;
+        }
+        
+        .header {
+            background: url(<?php echo get_template_directory_uri();
+            ?>/images/header-bg.jpg)
+        }
+        
+        .header {
+            border-bottom: 1px solid#dddddd;
+        }
+        
+        #footer {
+            background: url(<?php echo get_template_directory_uri();
+            ?>/images/footerbg.jpg)
+        }
+        
+        #footer {
+            color: #eeeeee;
+        }
+        
+        #copyright {
+            background: #2e2e2e;
+        }
+        
+        #copyright {
+            color: #ffffff;
+        }
+        
+        a,
+        .tm_client strong {
+            color: #b40000;
+        }
+        
+        .buy_theme h2 a,
+        .search-form .search-submit {
+            background-color: #b40000;
+        }
+        
+        a:hover {
+            color: #000000;
+        }
+        
+        .buy_theme h2 a:hover {
+            background-color: #000000;
+        }
+        
+        #footer a,
+        #copyright a {
+            color: #ffffff;
+        }
+        
+        .contact_info h3 {
+            color: #b40000;
+        }
+        
+        #footer a:hover,
+        #copyright a:hover {
+            color: #b40000;
+        }
+        
+        .welcome_text {
+            background-color: #f1f1f1;
+        }
+        
+        .four_column:hover {
+            background-color: #2e2e2e;
+        }
+        
+        .four_column:hover p {
+            color: #ffffff;
+        }
+        
+        .social-icons .icon {
+            background-color: #a4a4a4;
+        }
+        
+        .social-icons .icon:hover {
+            background-color: #b40000;
+        }
+        
+        .four_column .thumbox {
+            background-color: #b40000;
+        }
+        
+        .four_column:hover .thumbox {
+            background-color: #db0000;
+        }
+        
+        .theme-default .nivo-controlNav a,
+        #commentform input#submit {
+            background-color: #2e2e2e;
+        }
+        
+        .theme-default .nivo-controlNav a.active,
+        #commentform input#submit:hover {
+            background-color: #b40000;
+        }
+        
+        .nivo-caption h1 a {
+            font-family: PT Sans;
+            font-size: 35px;
+            color: #2e2e2e
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper_main">
+        <header class="header">
+            <div class="container">
+                <div class="head_fix">
+                    <div id="logo">
+                        <a href="<?php echo home_url('home'); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" />
+                     </a>
+                    </div>
+                    <div class="header_right">
+                        <h4 class="phone"><span>Call Us:</span> +62 500 800 123</h4>
+                        <div class="mobile_nav"><a href="#">Menu...</a></div>
+                        <nav id="nav">
+                            <ul>
+                                <li class="current_page_item"><a href="<?php echo home_url('home'); ?>">Home</a></li>
+                                <li class="page_item page-item-2"><a href="">Sample Page</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <!--end.head_fix-->
+            </div>
+        </header>
+        <section id="home_slider">
+            <div class="container">
+                <div class="slider-wrapper theme-default">
+                    <div id="slider" class="nivoSlider">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/slides/slide_01.jpg" alt="" title="#slidecaption1" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/slides/slide_02.jpg" alt="" title="#slidecaption2" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/slides/slide_03.jpg" alt="" title="#slidecaption3" />
+                    </div>
+                    <div id="slidecaption1" class="nivo-html-caption">
+                        <div class="slide_info">
+                            <h1><a href="#">Use information technology to meet your business objectives</a></h1>
+                        </div>
+                    </div>
+
+                    <div id="slidecaption2" class="nivo-html-caption">
+                        <div class="slide_info">
+                            <h1><a href="#">Use information technology to meet your business objectives</a></h1>
+                        </div>
+                    </div>
+
+                    <div id="slidecaption3" class="nivo-html-caption">
+                        <div class="slide_info">
+                            <h1><a href="#">Use information technology to meet your business objectives</a></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </section>
+
+        <section class="welcome_text">
+            <div class="container">
+                <div class="four_column ">
+                    <div class="thumbox">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-01.png" alt="" />
+                    </div>
+                    <h4>Page Title 1</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, posuere a condimentum sit amet, rhoncus eu libero. Maecenas in tincidunt turpis, ut rhoncus neque.</p>
+                    <a href="#"><span class="read">Read More</span></a>
+                </div>
+                <div class="four_column ">
+                    <div class="thumbox">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-02.png" alt="" />
+                    </div>
+                    <h4>Page Title 2</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, posuere a condimentum sit amet, rhoncus eu libero. Maecenas in tincidunt turpis, ut rhoncus neque.</p>
+                    <a href="#"><span class="read">Read More</span></a>
+                </div>
+                <div class="four_column ">
+                    <div class="thumbox">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-03.png" alt="" />
+                    </div>
+                    <h4>Page Title 3</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, posuere a condimentum sit amet, rhoncus eu libero. Maecenas in tincidunt turpis, ut rhoncus neque.</p>
+                    <a href="#"><span class="read">Read More</span></a>
+                </div>
+                <div class="four_column last_column">
+                    <div class="thumbox">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/thumb-04.png" alt="" />
+                    </div>
+                    <h4>Page Title 4</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, posuere a condimentum sit amet, rhoncus eu libero. Maecenas in tincidunt turpis, ut rhoncus neque.</p>
+                    <a href="#"><span class="read">Read More</span></a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- container -->
+        </section>
+        <!-- welcome_text -->
+
+        <section class="about_wrap">
+            <div class="container">
+                <div class="page_wrapper">
+                    <div class="one_half">
+                        </p>
+                        <h2>Save time, save money,<br /> grow and succeed!</h2>
+                        <h5>We can be your guide in the world of information<br /> Technology!
+                        </h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, posuere a condimentum sit amet, rhoncus eu libero. Maecenas in tincidunt turpis, ut rhoncus neque. Nullam sit amet porta odio. Maecenas mattis nulla ac
+                            aliquet facilisis. Nulla orci ipsum, fermentum ut luctus sed, placerat non orci. In nec vehicula urna. Vestibulum id sapien enim. Nulla id sagittis turpis, eu faucibus dolor.</p>
+                        <p>
+                    </div>
+                    <div class="one_fourth">
+                        </p>
+                        <div class="emp-skills"><a href="#">Employment &amp; Skills </a></div>
+                        <div class="out-pro"><a href="#">Outsourcing Programs </a></div>
+                        <div class="personal-coaching"><a href="#">Personal Coaching </a></div>
+                        <div class="finance-management"><a href="#">Finance Management </a></div>
+                        <p>
+                    </div>
+                    <div class="one_fourth last_column">
+                        </p>
+                        <h5>Service Overview :-</h5>
+                        <ul>
+                            <li><a href="#">Maecenas in tincidunt</a></li>
+                            <li><a href="#">Nulla id sagittis turpis</a></li>
+                            <li><a href="#">Maecenas in tincidunt</a></li>
+                            <li><a href="#">Praesent pellentesque rhoncus pulvinar</a></li>
+                            <li><a href="#">Vestibulum id sapien enim</a></li>
+                            <li><a href="#">Maecenas mattis nulla ac aliquet</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                        </ul>
+                        <p>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial_wrap">
+            <div class="container">
+                <div class="page_wrapper">
+                    <ul id="testimonials">
+                        <li class="list_testimonials">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, posuere a condimentum sit amet, rhoncus eu libero. Maecenas in tincidunt turpis, ut rhoncus neque. Nullam sit amet porta odio. Maecenas mattis nulla
+                                ac aliquet facilisis. Nulla orci ipsum, fermentum ut luctus sed, placerat non orci.</p>
+                            <cite> - John Doe</cite>
+                        </li>
+
+                        <li class="list_testimonials">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, posuere a condimentum sit amet, rhoncus eu libero. Maecenas in tincidunt turpis, ut rhoncus neque. Nullam sit amet porta odio. Maecenas mattis nulla
+                                ac aliquet facilisis. Nulla orci ipsum, fermentum ut luctus sed, placerat non orci.</p>
+                            <cite> - Mario Speedwagon</cite>
+                        </li>
+                    </ul>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="clear"></div>
+
+    </div>
+    <!--end .main-wrapper-->
+
+    <footer id="footer">
+        <div class="container">
+            <aside class="widget first">
+                <h3 class="widget-title">John Doe</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, posuere <br /><br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque augue eros, posuere a condimentum sit amet, rhoncus eu libero. Maecenas
+                    in tincidunt turpis, ut rhoncus neque. Nullam sit amet porta odio. Maecenas mattis nulla ac aliquet facilisis. </p>
+            </aside>
+            <aside class="widget second">
+                <h3 class="widget-title">Latest Tweets</h3>
+                <a class="twitter-timeline" data-chrome="nofooter noheader noborders noscroll noscrollbar transparent" data-tweet-limit="2" data-link-color="#b40000" data-theme="dark" data-dnt="true" href="https://twitter.com/sktthemes" data-widget-id="353086898853531648">Tweets by @sktthemes</a>
+                <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                </script>
+            </aside>
+
+
+            <aside class="widget third">
+                <h3 class="widget-title">Connect with us</h3>
+                <div class="social-icons">
+                    <a target="_blank" href="#" title="Facebook">
+                        <div class="fb icon"></div><span>Facebook</span></a>
+                    <a target="_blank" href="#" title="Twitter">
+                        <div class="twitt icon"></div><span>Twitter</span></a>
+                    <a target="_blank" href="#" title="Google Plus">
+                        <div class="gplus icon"></div><span>Google +</span></a>
+                    <a target="_blank" href="#" title="Linkedin">
+                        <div class="linkedin icon"></div><span>Linkedin</span></a>
+                    <a target="_blank" href="#" title="Pinterest">
+                        <div class="pint icon"></div><span>Pinterest</span></a>
+                    <a target="_blank" href="#" title="YouTube">
+                        <div class="ytube icon"></div><span>YouTube</span></a>
+                </div>
+            </aside>
+
+            <aside class="widget last">
+                <h3 class="widget-title">IT Consultant</h3>
+                <p>Office Blvd No. 000-000,<br /> Farmville Town, LA 12345<br /> Phone: +62 500 800 123<br /> Fax: +62 500 800 112</p>
+                <p>
+                    Email: <a href="mailto:site@example.com">site@example.com</a><br /> Website: <a href="http://www.yourdomain.com">www.yourdomain.com</a>
+                </p>
+            </aside>
+
+            <div class="clear"></div>
+        </div>
+    </footer>
+    <div id="copyright">
+        <div class="container">
+            <div class="left">IT Consultant &copy; 2016 | Theme by <a href="http://sktthemes.net/" target="_blank">SKT Themes</a></div>
+            <div class="right">
+                <div class="menu">
+                    <ul>
+                        <li class="current_page_item"><a href="<?php echo home_url('home'); ?>">Home</a></li>
+                        <li><a href="">Sample Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+    <script>
+        jQuery(window).load(function() {
+            jQuery('#slider').nivoSlider({
+                effect: 'fade',
+                animSpeed: 500,
+                pauseTime: 3000,
+                //directionNav: ,
+                controlNav: true,
+                pauseOnHover: false,
+            });
+            jQuery('ul#testimonials').quote_rotator();
+        });
+    </script>
+
+</body>
+
+</html>
